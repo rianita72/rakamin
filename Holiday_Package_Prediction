@@ -22,6 +22,7 @@ import math
 
 import gc
 
+#Exploratory Data Analysis
 df = pd.read_csv('Travel.csv')
 
 df.head()
@@ -44,7 +45,7 @@ for col in cat_cols:
     print(df[col].value_counts())
     print()
     
-Univariate Analysis
+#Univariate Analysis
 
 plt.figure(figsize=(12,8))
 for i in range(0, len(num_cols)):
@@ -92,7 +93,7 @@ plt.tight_layout()
 plt.show()
 
 
-Business Insight and Visualization
+#Business Insight and Visualization
 
 # Select the relevant columns for analysis
 selected_columns = ['Gender', 'MaritalStatus', 'Occupation', 'ProdTaken']  # Modify with the desired columns
